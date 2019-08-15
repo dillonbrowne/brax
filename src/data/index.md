@@ -12,7 +12,7 @@ Financial Situation …
 
 
 
-![image](/images/home_buyers_sm.png "image")
+![image](/static/home_buyers_sm.png "image")
 
 If you are renting now and are worried that you won’t ever be able to stop renting and buy your own house ...
 
