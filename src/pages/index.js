@@ -3,6 +3,7 @@ import Layout from "../components/layout"
 import Image from "../components/image"
 import { Col, Container, Row } from "reactstrap"
 import { graphql } from "gatsby"
+import img from "../../static/images/home_buyers_sm.png";
 
 const IndexPage = ({data}) => (
   <Layout>
@@ -23,6 +24,7 @@ const IndexPage = ({data}) => (
               Financial Situation …
             </h2>
             {/*<Image/>*/}
+            <img src={img} />
             <p>
               If you are renting now and are worried that you won’t ever be able to stop renting and buy your own house ...
             </p>
