@@ -9,8 +9,8 @@ import {
   NavLink,
   UncontrolledDropdown,
   DropdownToggle,
-  DropdownMenu,
-  DropdownItem } from 'reactstrap';
+  Row,
+  Col,} from 'reactstrap';
 import Container from "reactstrap/es/Container"
 
 class Footer extends React.Component {
@@ -32,20 +32,35 @@ class Footer extends React.Component {
     return (
       <div className='bg-primary py-2'>
         <Container>
+          <Row>
+            <Col>
           <Navbar color="primary" dark expand="md">
 
             <NavbarToggler onClick={this.toggle} />
             <Collapse isOpen={this.state.isOpen} navbar>
               <Nav className='ml-auto mr-auto' navbar>
                 <NavItem>
-                  <NavLink href="/components/">Components</NavLink>
+                  <NavLink href="/components/">Privacy Information</NavLink>
                 </NavItem>
                 <NavItem>
-                  <NavLink href="https://github.com/reactstrap/reactstrap">GitHub</NavLink>
+                  <NavLink href="https://github.com/reactstrap/reactstrap">Terms of Service</NavLink>
+                </NavItem>
+                <NavItem>
+                  <NavLink href="https://github.com/reactstrap/reactstrap">Cookie Use</NavLink>
                 </NavItem>
               </Nav>
             </Collapse>
           </Navbar>
+            </Col>
+          </Row>
+          <Row>
+            <Col className='text-center'>
+              <span>
+                Copyright © Raw Media Marketing 2019. All Rights Reserved.
+              </span>
+
+            </Col>
+          </Row>
         </Container>
 
       </div>
