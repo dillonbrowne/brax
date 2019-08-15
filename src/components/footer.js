@@ -40,13 +40,13 @@ class Footer extends React.Component {
             <Collapse isOpen={this.state.isOpen} navbar>
               <Nav className='ml-auto mr-auto' navbar>
                 <NavItem>
-                  <NavLink href="/components/">Privacy Information</NavLink>
+                  <NavLink href="https://wisechoicedaily.com/privacy.html">Privacy Information</NavLink>
                 </NavItem>
                 <NavItem>
-                  <NavLink href="https://github.com/reactstrap/reactstrap">Terms of Service</NavLink>
+                  <NavLink href="https://wisechoicedaily.com/terms.html">Terms of Service</NavLink>
                 </NavItem>
                 <NavItem>
-                  <NavLink href="https://github.com/reactstrap/reactstrap">Cookie Use</NavLink>
+                  <NavLink href="https://wisechoicedaily.com/cookies.html">Cookie Use</NavLink>
                 </NavItem>
               </Nav>
             </Collapse>
