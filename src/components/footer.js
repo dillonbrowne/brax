@@ -33,19 +33,17 @@ class Footer extends React.Component {
       <div className='bg-primary py-2'>
         <Container>
           <Row>
-            <Col className='text-center'>
-              <Nav pills>
-                <NavItem>
-                  <NavLink href="https://wisechoicedaily.com/privacy.html" active>Privacy Information</NavLink>
-                </NavItem>
-                <NavItem>
-                  <NavLink href="https://wisechoicedaily.com/terms.html" active>Terms of Service</NavLink>
-                </NavItem>
-                <NavItem>
-                  <NavLink href="https://wisechoicedaily.com/cookies.html" active>Cookie Use</NavLink>
-                </NavItem>
-              </Nav>
-            </Col>
+            <Nav pills className='ml-auto mr-auto'>
+              <NavItem>
+                <NavLink href="https://wisechoicedaily.com/privacy.html" active>Privacy Information</NavLink>
+              </NavItem>
+              <NavItem>
+                <NavLink href="https://wisechoicedaily.com/terms.html" active>Terms of Service</NavLink>
+              </NavItem>
+              <NavItem>
+                <NavLink href="https://wisechoicedaily.com/cookies.html" active>Cookie Use</NavLink>
+              </NavItem>
+            </Nav>
           </Row>
           <Row>
             <Col className='text-center'>
