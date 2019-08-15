@@ -7,7 +7,12 @@ module.exports = {
   plugins: [
     `gatsby-plugin-sass`,
     `gatsby-transformer-remark`,
-    `gatsby-plugin-netlify-cms`,
+    {
+      resolve: `gatsby-plugin-netlify-cms`,
+      options: {
+        enableIdentityWidget: true,
+      }
+    },
     'gatsby-plugin-netlify-identity-widget',
     `gatsby-plugin-react-helmet`,
     {

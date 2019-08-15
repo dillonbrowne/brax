@@ -1,16 +1,17 @@
 backend:
   name: git-gateway
+  repo: dillonbrowne/brax
 
 media_folder: src/images
 public_folder: images
 
 collections:
-  - name: blog
-    label: Blog
-    folder: blog
-    create: true
-    fields:
-      - { name: path, label: Path }
-      - { name: date, label: Date, widget: date }
-      - { name: title, label: Title }
-      - { name: body, label: Body, widget: markdown }
+  - label: "Pages"
+      name: "pages"
+      files:
+        - label: "Home Page"
+          name: "home"
+          file: "src/data/index.md"
+          fields:
+            - {label: Title, name: title, widget: string}
+            - {label: Intro, name: intro, widget: markdown}
