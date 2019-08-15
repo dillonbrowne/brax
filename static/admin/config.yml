@@ -1,7 +1,7 @@
 backend:
   name: git-gateway
   repo: dillonbrowne/brax
-  logo: 'https://d33wubrfki0l68.cloudfront.net/339af5c254abadb1f774a4f4a6b8ac1cfe1b9bb9/b517e/img/dillon-browne-dark.png'
+  logo_url: 'https://d33wubrfki0l68.cloudfront.net/339af5c254abadb1f774a4f4a6b8ac1cfe1b9bb9/b517e/img/dillon-browne-dark.png'
 
 media_folder: static/images
 public_folder: images
