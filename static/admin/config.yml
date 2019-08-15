@@ -7,11 +7,11 @@ public_folder: images
 
 collections:
   - label: "Pages"
-      name: "pages"
-      files:
-        - label: "Home Page"
-          name: "home"
-          file: "src/data/index.md"
-          fields:
-            - {label: Title, name: title, widget: string}
-            - {label: Intro, name: intro, widget: markdown}
+    name: "pages"
+    files:
+      - label: "Home Page"
+        name: "home"
+        file: "src/data/index.md"
+        fields:
+          - {label: Title, name: title, widget: string}
+          - {label: Intro, name: intro, widget: markdown}
