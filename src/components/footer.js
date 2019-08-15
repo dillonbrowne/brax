@@ -33,29 +33,23 @@ class Footer extends React.Component {
       <div className='bg-primary py-2'>
         <Container>
           <Row>
-            <Col>
-          <Navbar color="primary" dark expand="md">
-
-            <NavbarToggler onClick={this.toggle} />
-            <Collapse isOpen={this.state.isOpen} navbar>
-              <Nav className='ml-auto mr-auto' navbar>
+            <Col className='text-center'>
+              <Nav pills>
                 <NavItem>
-                  <NavLink href="https://wisechoicedaily.com/privacy.html">Privacy Information</NavLink>
+                  <NavLink href="https://wisechoicedaily.com/privacy.html" active>Privacy Information</NavLink>
                 </NavItem>
                 <NavItem>
-                  <NavLink href="https://wisechoicedaily.com/terms.html">Terms of Service</NavLink>
+                  <NavLink href="https://wisechoicedaily.com/terms.html" active>Terms of Service</NavLink>
                 </NavItem>
                 <NavItem>
-                  <NavLink href="https://wisechoicedaily.com/cookies.html">Cookie Use</NavLink>
+                  <NavLink href="https://wisechoicedaily.com/cookies.html" active>Cookie Use</NavLink>
                 </NavItem>
               </Nav>
-            </Collapse>
-          </Navbar>
             </Col>
           </Row>
           <Row>
             <Col className='text-center'>
-              <span>
+              <span className='text-white'>
                 Copyright © Raw Media Marketing 2019. All Rights Reserved.
               </span>
 
