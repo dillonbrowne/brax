@@ -10,55 +10,57 @@ import {
   UncontrolledDropdown,
   DropdownToggle,
   Row,
-  Col,} from 'reactstrap';
+  Col,
+} from "reactstrap"
 import Container from "reactstrap/es/Container"
 
 class Footer extends React.Component {
   constructor(props) {
-    super(props);
+    super(props)
 
-    this.toggle = this.toggle.bind(this);
+    this.toggle = this.toggle.bind(this)
     this.state = {
-      isOpen: false
-    };
+      isOpen: false,
+    }
   }
   toggle() {
     this.setState({
-      isOpen: !this.state.isOpen
-    });
+      isOpen: !this.state.isOpen,
+    })
   }
-  render(){
-
+  render() {
     return (
-      <div className='bg-primary py-2'>
+      <div className="bg-primary py-2">
         <Container>
           <Row>
-            <Nav pills className='ml-auto mr-auto'>
+            <Nav pills className="ml-auto mr-auto">
               <NavItem>
-                <NavLink href="https://wisechoicedaily.com/privacy.html" active>Privacy Information</NavLink>
+                <NavLink href="https://wisechoicedaily.com/privacy.html" active>
+                  Privacy Information
+                </NavLink>
               </NavItem>
               <NavItem>
-                <NavLink href="https://wisechoicedaily.com/terms.html" active>Terms of Service</NavLink>
+                <NavLink href="https://wisechoicedaily.com/terms.html" active>
+                  Terms of Service
+                </NavLink>
               </NavItem>
               <NavItem>
-                <NavLink href="https://wisechoicedaily.com/cookies.html" active>Cookie Use</NavLink>
+                <NavLink href="https://wisechoicedaily.com/cookies.html" active>
+                  Cookie Use
+                </NavLink>
               </NavItem>
             </Nav>
           </Row>
           <Row>
-            <Col className='text-center'>
-              <span className='text-white'>
+            <Col className="text-center">
+              <span className="text-white">
                 Copyright © Raw Media Marketing 2019. All Rights Reserved.
               </span>
-
             </Col>
           </Row>
         </Container>
-
       </div>
-
     )
-
   }
 }
 

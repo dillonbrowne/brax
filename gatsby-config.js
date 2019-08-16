@@ -11,9 +11,9 @@ module.exports = {
       resolve: `gatsby-plugin-netlify-cms`,
       options: {
         enableIdentityWidget: true,
-      }
+      },
     },
-    'gatsby-plugin-netlify-identity-widget',
+    "gatsby-plugin-netlify-identity-widget",
     `gatsby-plugin-react-helmet`,
     {
       resolve: `gatsby-source-filesystem`,
