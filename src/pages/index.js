@@ -257,8 +257,8 @@ const IndexPage = ({ data }) => (
             </p>
             <p>Inside this guide you’ll learn:</p>
 
-            <ul>
-              <li>
+            <ul className='list-padding' style={{marginTop: "-2em"}}>
+              <li >
                 Exactly what questions to ask a Realtor before hiring them –
                 these questions will allow you to quickly sort the quality
                 Realtors from the scammers
@@ -319,7 +319,7 @@ const IndexPage = ({ data }) => (
               </li>
             </ul>
 
-            <ul>
+            <ul className='list-padding'>
               <li>
                 <span>
                   The truth about renting and how it can actually make you move
@@ -359,9 +359,6 @@ const IndexPage = ({ data }) => (
               </b>
             </p>
 
-            <p>
-              <span>&nbsp;</span>
-            </p>
 
             <p>
               <span>
@@ -371,9 +368,6 @@ const IndexPage = ({ data }) => (
               </span>
             </p>
 
-            <p>
-              <span>&nbsp;</span>
-            </p>
 
             <p>
               <span>
@@ -383,9 +377,6 @@ const IndexPage = ({ data }) => (
               </span>
             </p>
 
-            <p>
-              <span>&nbsp;</span>
-            </p>
 
             <p>
               <span>
@@ -395,9 +386,7 @@ const IndexPage = ({ data }) => (
               </span>
             </p>
 
-            <p>
-              <span>&nbsp;</span>
-            </p>
+
 
             <p>
               <b>
@@ -410,9 +399,7 @@ const IndexPage = ({ data }) => (
               </b>
             </p>
 
-            <p>
-              <span>&nbsp;</span>
-            </p>
+
 
             <p>
               <span>
@@ -425,9 +412,7 @@ const IndexPage = ({ data }) => (
               </span>
             </p>
 
-            <p>
-              <span>&nbsp;</span>
-            </p>
+
 
             <p>
               <b>
@@ -438,13 +423,7 @@ const IndexPage = ({ data }) => (
               </b>
             </p>
 
-            <p>
-              <b>
-                <i>
-                  <span>&nbsp;</span>
-                </i>
-              </b>
-            </p>
+
 
             <p>
               <i>
