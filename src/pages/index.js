@@ -91,7 +91,7 @@ const IndexPage = ({ data }) => (
             <p>
               Renting can also come with a number of other negatives, such as:
             </p>
-            <ul>
+            <ul className='list-padding'>
               <li>
                 <b>
                   Being cramped for space, especially if your family grows
@@ -143,7 +143,7 @@ const IndexPage = ({ data }) => (
               look at a few of the many benefits that come with home ownership,
               such as:
             </p>
-            <ul>
+            <ul className='list-padding'>
               <li>
                 <b>
                   Being able to park your car in your own garage or driveway
@@ -178,7 +178,7 @@ const IndexPage = ({ data }) => (
               their own home.
             </p>
             <p>Maybe you think:</p>
-            <ul>
+            <ul className='list-padding'>
               <li>
                 That you can't get a loan … or maybe you’ve been rejected by a
                 bank in the past …
@@ -439,7 +439,7 @@ const IndexPage = ({ data }) => (
             </p>
 
             <p>
-              <span>&nbsp;</span>
+
             </p>
 
             <p>
@@ -457,7 +457,7 @@ const IndexPage = ({ data }) => (
             </p>
 
             <p>
-              <span>&nbsp;</span>
+
             </p>
 
             <p>
@@ -470,7 +470,7 @@ const IndexPage = ({ data }) => (
             </p>
 
             <p>
-              <span>&nbsp;</span>
+
             </p>
 
             <p>
@@ -483,11 +483,11 @@ const IndexPage = ({ data }) => (
             </p>
 
             <p>
-              <span>&nbsp;</span>
+
             </p>
 
             <p>
-              <span>&nbsp;</span>
+
             </p>
 
             <p>
@@ -497,11 +497,11 @@ const IndexPage = ({ data }) => (
             </p>
 
             <p>
-              <span>&nbsp;</span>
+
             </p>
 
             <p>
-              <span>&nbsp;</span>
+
             </p>
 
             <p>
@@ -518,7 +518,7 @@ const IndexPage = ({ data }) => (
 
             <p>
               <b>
-                <span>&nbsp;</span>
+
               </b>
             </p>
 
@@ -531,7 +531,7 @@ const IndexPage = ({ data }) => (
             </p>
 
             <p>
-              <span>&nbsp;</span>
+
             </p>
 
             <p>
@@ -543,7 +543,7 @@ const IndexPage = ({ data }) => (
             </p>
 
             <p>
-              <span>&nbsp;</span>
+
             </p>
 
             <p>
@@ -556,7 +556,7 @@ const IndexPage = ({ data }) => (
             </p>
 
             <p>
-              <span>&nbsp;</span>
+
             </p>
 
             <p>
@@ -568,7 +568,7 @@ const IndexPage = ({ data }) => (
             </p>
 
             <p>
-              <span>&nbsp;</span>
+
             </p>
 
             <p>
@@ -581,7 +581,7 @@ const IndexPage = ({ data }) => (
             </p>
 
             <p>
-              <span>&nbsp;</span>
+
             </p>
 
             <p>
@@ -595,7 +595,7 @@ const IndexPage = ({ data }) => (
             </p>
 
             <p>
-              <span>&nbsp;</span>
+
             </p>
 
             <p>
@@ -608,7 +608,7 @@ const IndexPage = ({ data }) => (
             </p>
 
             <p>
-              <span>&nbsp;</span>
+
             </p>
 
             <p>
@@ -622,7 +622,7 @@ const IndexPage = ({ data }) => (
 
             <p>
               <i>
-                <span>&nbsp;</span>
+
               </i>
             </p>
 
@@ -635,7 +635,7 @@ const IndexPage = ({ data }) => (
             </p>
 
             <p>
-              <span>&nbsp;</span>
+
             </p>
 
             <p>
@@ -648,7 +648,7 @@ const IndexPage = ({ data }) => (
 
             <p>
               <em>
-                <span>&nbsp;</span>
+
               </em>
             </p>
 
@@ -666,7 +666,7 @@ const IndexPage = ({ data }) => (
 
             <p>
               <em>
-                <span>&nbsp;</span>
+
               </em>
             </p>
 
@@ -677,7 +677,7 @@ const IndexPage = ({ data }) => (
             </p>
 
             <p>
-              <span>&nbsp;</span>
+
             </p>
 
             <p>
@@ -688,7 +688,7 @@ const IndexPage = ({ data }) => (
             </p>
 
             <p>
-              <span>&nbsp;</span>
+
             </p>
 
             <p>
@@ -703,7 +703,7 @@ const IndexPage = ({ data }) => (
             </p>
 
             <p>
-              <span>&nbsp;</span>
+
             </p>
 
             <p>
@@ -711,10 +711,10 @@ const IndexPage = ({ data }) => (
             </p>
 
             <p>
-              <span>&nbsp;</span>
+
             </p>
 
-            <ul>
+            <ul className='list-padding'>
               <li>
                 <b>
                   <span>
@@ -779,7 +779,7 @@ const IndexPage = ({ data }) => (
 
             <p>
               <b>
-                <span>&nbsp;</span>
+
               </b>
             </p>
 
@@ -799,7 +799,7 @@ const IndexPage = ({ data }) => (
             </p>
 
             <p>
-              <span>&nbsp;</span>
+
             </p>
 
             <p>
@@ -816,7 +816,7 @@ const IndexPage = ({ data }) => (
             </p>
 
             <p>
-              <span>&nbsp;</span>
+
             </p>
 
             <p>
@@ -827,7 +827,7 @@ const IndexPage = ({ data }) => (
             </p>
 
             <p>
-              <span>&nbsp;</span>
+
             </p>
 
             <p>
@@ -838,11 +838,11 @@ const IndexPage = ({ data }) => (
             </p>
 
             <p>
-              <span>&nbsp;</span>
+
             </p>
 
             <p>
-              <span>&nbsp;</span>
+
             </p>
 
             <p>
@@ -852,11 +852,11 @@ const IndexPage = ({ data }) => (
             </p>
 
             <p>
-              <span>&nbsp;</span>
+
             </p>
 
             <p>
-              <span>&nbsp;</span>
+
             </p>
 
             <p>
@@ -872,7 +872,7 @@ const IndexPage = ({ data }) => (
             </p>
 
             <p>
-              <span>&nbsp;</span>
+
             </p>
 
             <p>
@@ -890,7 +890,7 @@ const IndexPage = ({ data }) => (
             </p>
 
             <p>
-              <span>&nbsp;</span>
+
             </p>
 
             <p>
@@ -902,7 +902,7 @@ const IndexPage = ({ data }) => (
             </p>
 
             <p>
-              <span>&nbsp;</span>
+
             </p>
 
             <p>
@@ -919,7 +919,7 @@ const IndexPage = ({ data }) => (
             </p>
 
             <p>
-              <span>&nbsp;</span>
+
             </p>
 
             <p>
@@ -935,12 +935,12 @@ const IndexPage = ({ data }) => (
             </p>
 
             <p>
-              <span>&nbsp;</span>
+
             </p>
 
             <p>
               <b>
-                <span>&nbsp;</span>
+
               </b>
             </p>
 
@@ -954,12 +954,12 @@ const IndexPage = ({ data }) => (
 
             <p>
               <b>
-                <span>&nbsp;</span>
+
               </b>
             </p>
 
             <p>
-              <span>&nbsp;</span>
+
             </p>
 
             <p>
@@ -967,11 +967,11 @@ const IndexPage = ({ data }) => (
             </p>
 
             <p>
-              <span>&nbsp;</span>
+
             </p>
 
             <p>
-              <span>&nbsp;</span>
+
             </p>
 
             <p>
@@ -1018,7 +1018,7 @@ const IndexPage = ({ data }) => (
               <strong>
                 <u>
                   <span>
-                    <span>&nbsp;</span>
+
                   </span>
                 </u>
               </strong>
@@ -1037,7 +1037,7 @@ const IndexPage = ({ data }) => (
             </p>
 
             <p>
-              <span>&nbsp;</span>
+
             </p>
 
             <p>
