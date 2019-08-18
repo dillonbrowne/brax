@@ -23,6 +23,8 @@ const IndexPage = ({ data }) => (
             </h2>
             {/*<Image/>*/}
             <img src={img} />
+            <br />
+            <br />
             <p>
               If you are renting now and are worried that you won’t ever be able
               to stop renting and buy your own house ...
@@ -257,7 +259,7 @@ const IndexPage = ({ data }) => (
             </p>
             <p>Inside this guide you’ll learn:</p>
 
-            <ul className='list-padding' style={{marginTop: "-2em"}}>
+            <ul className='list-padding' style={{marginTop: "0em"}}>
               <li >
                 Exactly what questions to ask a Realtor before hiring them –
                 these questions will allow you to quickly sort the quality
