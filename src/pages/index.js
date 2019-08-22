@@ -4,7 +4,6 @@ import Image from "../components/image"
 import { Col, Container, Row } from "reactstrap"
 import { graphql } from "gatsby"
 import img from "../../static/images/home_buyers_sm.png"
-import Stripe from 'gatsby-plugin-stripe';
 const IndexPage = ({ data }) => {
   var stripe = Stripe('pk_live_hGdhOcVhYrNxRz4Qcp4Suq0b');
 

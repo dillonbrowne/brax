@@ -20,12 +20,7 @@ module.exports = {
         pixelId: '1030446717126786',
       },
     },
-    {
-      resolve: `gatsby-plugin-stripe`,
-      options: {
-        async: true,
-      },
-    },
+    `gatsby-plugin-stripe`,
     {
       resolve: "gatsby-plugin-google-tagmanager",
       options: {
