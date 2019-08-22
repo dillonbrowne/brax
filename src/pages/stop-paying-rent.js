@@ -500,10 +500,11 @@ const IndexPage = class extends React.Component {
                   <u>
                     <button
                       onClick={event => this.redirectToCheckout(event)}
-                      id="checkout-button-sku_FXo3ECgAxZiGrW-1"
-                    >
-                      Order Now Button
+                      className='checkout-btn'
+                      id="checkout-button-sku_FXmKOePI4nKB2M-bottom" role="link">
+                      Get Home Buyers Shortcut
                     </button>
+
                   </u>
                 </p>
 
