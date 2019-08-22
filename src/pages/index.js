@@ -4,8 +4,26 @@ import Image from "../components/image"
 import { Col, Container, Row } from "reactstrap"
 import { graphql } from "gatsby"
 import img from "../../static/images/home_buyers_sm.png"
+import Stripe from 'gatsby-plugin-stripe';
+const IndexPage = ({ data }) => {
+  var stripe = Stripe('pk_live_hGdhOcVhYrNxRz4Qcp4Suq0b');
 
-const IndexPage = ({ data }) => (
+  var checkoutButton = document.getElementById('checkout-button-sku_FXo3ECgAxZiGrW-1');
+  checkoutButton.addEventListener('click', function () {
+    stripe.redirectToCheckout({
+      items: [{sku: 'sku_FXo3ECgAxZiGrW', quantity: 1}],
+      successUrl: 'https://your.wisechoicedaily.com/checkout/success',
+      cancelUrl: 'https://your.wisechoicedaily.com/checkout/canceled',
+    })
+      .then(function (result) {
+        if (result.error) {
+          var displayError = document.getElementById('error-message-1');
+          displayError.textContent = result.error.message;
+        }
+      });
+  });
+
+  return (
   <Layout>
     <div className="section py-5">
       <Container>
@@ -494,7 +512,7 @@ const IndexPage = ({ data }) => (
 
             <p>
               <u>
-                <span>Order Now Button</span>
+                <button id="checkout-button-sku_FXo3ECgAxZiGrW-1">Order Now Button</button>
               </u>
             </p>
 
@@ -846,6 +864,8 @@ const IndexPage = ({ data }) => (
             <p>
 
             </p>
+            <div id="error-message-1" />
+
 
             <p>
               <u>
@@ -1060,7 +1080,7 @@ const IndexPage = ({ data }) => (
       </Container>
     </div>
   </Layout>
-)
+)}
 export const query = graphql`
   query HomePage {
     markdownRemark {
