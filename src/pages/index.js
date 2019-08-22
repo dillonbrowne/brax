@@ -4,24 +4,57 @@ import Image from "../components/image"
 import { Col, Container, Row } from "reactstrap"
 import { graphql } from "gatsby"
 import img from "../../static/images/home_buyers_sm.png"
-const IndexPage = ({ data }) => {
-  var stripe = Stripe('pk_live_hGdhOcVhYrNxRz4Qcp4Suq0b');
+const IndexPage = class extends React.Component {
+  componentDidMount()
+  {
+    this.stripe = window.Stripe('pk_live_hGdhOcVhYrNxRz4Qcp4Suq0b');
 
-  var checkoutButton = document.getElementById('checkout-button-sku_FXo3ECgAxZiGrW-1');
-  checkoutButton.addEventListener('click', function () {
-    stripe.redirectToCheckout({
-      items: [{sku: 'sku_FXo3ECgAxZiGrW', quantity: 1}],
-      successUrl: 'https://your.wisechoicedaily.com/checkout/success',
-      cancelUrl: 'https://your.wisechoicedaily.com/checkout/canceled',
-    })
-      .then(function (result) {
-        if (result.error) {
-          var displayError = document.getElementById('error-message-1');
-          displayError.textContent = result.error.message;
-        }
-      });
-  });
+    var checkoutButton = document.getElementById('checkout-button-sku_FXo3ECgAxZiGrW-1');
+    checkoutButton.addEventListener('click', function () {
+      this.stripe.redirectToCheckout({
+        items: [{sku: 'sku_FXo3ECgAxZiGrW', quantity: 1}],
+        successUrl: 'https://your.wisechoicedaily.com/checkout/success',
+        cancelUrl: 'https://your.wisechoicedaily.com/checkout/canceled',
+      })
+        .then(function (result) {
+          if (result.error) {
+            var displayError = document.getElementById('error-message-1');
+            displayError.textContent = result.error.message;
+          }
+        });
+    });
 
+    var checkoutButton2 = document.getElementById('checkout-button-sku_FXo3ECgAxZiGrW-2');
+    checkoutButton2.addEventListener('click', function () {
+      this.stripe.redirectToCheckout({
+        items: [{sku: 'sku_FXo3ECgAxZiGrW', quantity: 1}],
+        successUrl: 'https://your.wisechoicedaily.com/checkout/success',
+        cancelUrl: 'https://your.wisechoicedaily.com/checkout/canceled',
+      })
+        .then(function (result) {
+          if (result.error) {
+            var displayError = document.getElementById('error-message-2');
+            displayError.textContent = result.error.message;
+          }
+        });
+    });
+
+    var checkoutButton3 = document.getElementById('checkout-button-sku_FXo3ECgAxZiGrW-3');
+    checkoutButton3.addEventListener('click', function () {
+      this.stripe.redirectToCheckout({
+        items: [{sku: 'sku_FXo3ECgAxZiGrW', quantity: 1}],
+        successUrl: 'https://your.wisechoicedaily.com/checkout/success',
+        cancelUrl: 'https://your.wisechoicedaily.com/checkout/canceled',
+      })
+        .then(function (result) {
+          if (result.error) {
+            var displayError = document.getElementById('error-message-3');
+            displayError.textContent = result.error.message;
+          }
+        });
+    });
+  }
+  render(){
   return (
   <Layout>
     <div className="section py-5">
@@ -868,7 +901,7 @@ const IndexPage = ({ data }) => {
 
             <p>
               <u>
-                <span>Order Now Button</span>
+                <button id="checkout-button-sku_FXo3ECgAxZiGrW-2">Order Now Button</button>
               </u>
             </p>
 
@@ -968,7 +1001,7 @@ const IndexPage = ({ data }) => {
             <p>
               <b>
                 <u>
-                  <span>Order Now Button</span>
+                  <button id="checkout-button-sku_FXo3ECgAxZiGrW-3">Order Now Button</button>
                 </u>
               </b>
             </p>
@@ -1079,7 +1112,9 @@ const IndexPage = ({ data }) => {
       </Container>
     </div>
   </Layout>
-)}
+  )
+  }
+}
 export const query = graphql`
   query HomePage {
     markdownRemark {
