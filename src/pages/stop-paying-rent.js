@@ -916,9 +916,9 @@ const IndexPage = class extends React.Component {
                     <u>
                       <button
                         onClick={event => this.redirectToCheckout(event)}
-                        id="checkout-button-sku_FXo3ECgAxZiGrW-3"
-                      >
-                        Order Now Button
+                        className='checkout-btn'
+                        id="checkout-button-sku_FXmKOePI4nKB2M-bottom" role="link">
+                        Get Home Buyers Shortcut
                       </button>
                     </u>
                   </b>
@@ -971,7 +971,13 @@ const IndexPage = class extends React.Component {
                         last rental check and start enjoying the comfort and
                         security of owning your very own home!{" "}
                         <u>
-                          <span>Click here to order now.</span>
+                          <button
+                            onClick={event => this.redirectToCheckout(event)}
+                            className='checkout-btn'
+                            id="checkout-button-sku_FXmKOePI4nKB2M-bottom" role="link">
+                      Click here to order now.
+                    </button>
+
                         </u>
                       </span>
                     </strong>
