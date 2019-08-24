@@ -930,31 +930,7 @@ const IndexPage = class extends React.Component {
 
                 <p></p>
 
-                <p>
-                  <span>Sincerely,</span>
-                </p>
 
-                <p></p>
-
-                <p></p>
-
-                <p>
-                  <b>
-                    <span>Name </span>
-                  </b>
-                </p>
-
-                <p>
-                  <b>
-                    <span>Title</span>
-                  </b>
-                </p>
-
-                <p>
-                  <b>
-                    <span>Company</span>
-                  </b>
-                </p>
 
                 <p>
                   <b>
